@@ -1,0 +1,16 @@
+services:
+  app-ui:
+    build:
+      context: .
+      # args:
+      #   ARG: value
+      dockerfile: Dockerfile
+    image: app-ui-image
+    container_name: react-ts-fastapi
+    ports:
+      - 3010:8010
+    environment:
+      TZ: America/New_York
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
