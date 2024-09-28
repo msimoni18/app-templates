@@ -1,0 +1,4 @@
+ipykernel==6.29.5
+plotly==5.22.0
+mypy==1.10.1
+pyinstaller==6.10.0
